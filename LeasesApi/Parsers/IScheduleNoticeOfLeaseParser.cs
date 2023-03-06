@@ -2,6 +2,6 @@
 {
     public interface IScheduleNoticeOfLeaseParser
     {
-        public List<TextBlock> Parse(List<string> entryText);
+        public ParsedEntry Parse(List<string> entryText);
     }
 }

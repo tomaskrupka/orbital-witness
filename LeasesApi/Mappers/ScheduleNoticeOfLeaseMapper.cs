@@ -22,15 +22,14 @@ namespace LeasesApi.Mappers
                 entryDate :
                 null;
 
-            var textBlocks = _scheduleNoticeOfLeaseParser.Parse(rawScheduleNoticeOfLease.EntryText);
+            var (textBlocks, notes) = _scheduleNoticeOfLeaseParser.Parse(rawScheduleNoticeOfLease.EntryText);
 
             parsedNotice.RegistrationDateAndPlanRef = textBlocks[0].Text;
-
             parsedNotice.PropertyDescription = textBlocks[1].Text;
-
             parsedNotice.DateOfLeaseAndTerm = textBlocks[2].Text;
-
             parsedNotice.LesseesTitle = textBlocks[3].Text;
+
+            parsedNotice.Notes = notes;
 
             return parsedNotice;
         }

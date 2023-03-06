@@ -16,7 +16,7 @@ namespace LeasesApi.Parsers
             _logger = logger;
         }
 
-        public virtual List<TextBlock> Parse(List<string> entryText)
+        public virtual ParsedEntry Parse(List<string> entryText)
         {
             var allEntries = PreParse(entryText);
 
@@ -32,7 +32,7 @@ namespace LeasesApi.Parsers
 
             var blocks = AppendIrregularEntry(regularBlocks, irregularEntry);
 
-            return blocks;
+            return (blocks, notes);
         }
 
         protected virtual List<string> PreParse(List<string> entries)
