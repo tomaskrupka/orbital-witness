@@ -3,7 +3,6 @@ using LeasesApi.EyeExam.Extensions;
 using LeasesApi.Mappers;
 using LeasesApi.Parsers;
 using LeasesApi.Serialisers;
-using System.Net.Http;
 
 namespace LeasesApi.Extensions
 {

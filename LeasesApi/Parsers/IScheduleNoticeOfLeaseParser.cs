@@ -1,6 +1,4 @@
-﻿using LeasesApi.DTOs;
-
-namespace LeasesApi.Parsers
+﻿namespace LeasesApi.Parsers
 {
     public interface IScheduleNoticeOfLeaseParser
     {

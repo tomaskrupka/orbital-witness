@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Builder;
-
-namespace LeasesApi
+﻿namespace LeasesApi
 {
     public class Startup
     {

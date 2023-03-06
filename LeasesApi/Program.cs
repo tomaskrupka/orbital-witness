@@ -1,6 +1,5 @@
 using LeasesApi.Extensions;
 using LeasesApi.EyeExam;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
